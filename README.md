@@ -37,9 +37,9 @@ This code should be used for the purpose of creating/editing code for a Google B
 ## Credits
 
 3 contributors:
-[Lisa Copeland](https://github.com/stopdaydreaming)
-[Derrick Hardison](https://github.com/derrickhardison)
-[Selena Singleton](https://github.com/ssingle7)
+[Lisa Copeland](https://github.com/stopdaydreaming)  
+[Derrick Hardison](https://github.com/derrickhardison)  
+[Selena Singleton](https://github.com/ssingle7)  
 
 ## License
 
