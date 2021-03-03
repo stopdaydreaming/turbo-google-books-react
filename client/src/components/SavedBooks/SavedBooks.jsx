@@ -1,7 +1,19 @@
 import React from "react";
+import axios from "axios";
 
 const SavedBooks = props => {
   const { authors, title, link, image, description } = props.book;
+
+  const deleteBook = (id) => {
+    axios
+      .delete(`/api/books/${id}`)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div className="mt-5">
@@ -11,9 +23,12 @@ const SavedBooks = props => {
             <a href={link} className="btn btn-outline-primary mr-3">
               VIEW
             </a>
-            <a href="#" className="btn btn-outline-danger">
+            <button
+              className="btn btn-outline-danger"
+              // onClick={() => deleteBook(book._id)}
+            >
               DELETE
-            </a>
+            </button>
           </div>
           <h5 className="card-title">{title}</h5>
 
@@ -30,7 +45,6 @@ const SavedBooks = props => {
                   <div className="col-md-7">
                     <div className="card-body">
                       <p className="card-text">{description}</p>
-                    
                     </div>
                   </div>
                 </div>
