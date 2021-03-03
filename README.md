@@ -27,7 +27,7 @@ Google Books Search app is a React-based app for searching and saving from the G
 
 ### Steps required to run online
 
-Click this link to [VIEW APP]()
+Click this link to [VIEW APP](https://turbo-google-books-react.herokuapp.com/)
 
 ## Usage
 
