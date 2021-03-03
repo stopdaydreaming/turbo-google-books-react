@@ -32,11 +32,12 @@ Click this link to [VIEW APP]()
 ## Usage
 
 This code should be used for the purpose of creating/editing code for a Google Books Search app.
-![Google Books Search App](./public/screenshot.png)
+![Google Books Search App](./screenshots/screenshot.png)
 
 ## Credits
 
 3 contributors:  
+Special thanks to my amazing tutor.  
 [Lisa Copeland](https://github.com/stopdaydreaming)  
 [Derrick Hardison](https://github.com/derrickhardison)  
 [Selena Singleton](https://github.com/ssingle7)
