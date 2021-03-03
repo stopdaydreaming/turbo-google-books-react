@@ -5,14 +5,15 @@ const SavedBooks = props => {
   const { authors, title, link, image, description } = props.book;
 
   const deleteBook = (id) => {
-    axios
-      .delete(`/api/books/${id}`)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    console.log("delete button clicked");
+    // axios
+    //   .delete(`/api/books/${id}`)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
 
   return (
@@ -26,6 +27,7 @@ const SavedBooks = props => {
             <button
               className="btn btn-outline-danger"
               // onClick={() => deleteBook(book._id)}
+              onClick={() => deleteBook()}
             >
               DELETE
             </button>
