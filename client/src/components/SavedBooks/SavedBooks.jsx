@@ -5,7 +5,7 @@ const SavedBooks = props => {
   const { authors, title, link, image, description } = props.book;
 
   const deleteBook = (id) => {
-    console.log("delete button clicked");
+    console.log("Delete book clicked!");
     // axios
     //   .delete(`/api/books/${id}`)
     //   .then((res) => {
