@@ -1,5 +1,5 @@
 import React from "react";
-import SavedBooks from "../components/SavedBooks/SavedBooks";
+//import SavedBooks from "../components/SavedBooks/SavedBooks";
 
 const Saved = () => {
   return (
@@ -7,7 +7,7 @@ const Saved = () => {
       <div className="row">
         <div className="col-md-12">
           <h1>Saved Books</h1>
-          <SavedBooks />
+          {/* <SavedBooks /> */}
         </div>
       </div>
     </div>
