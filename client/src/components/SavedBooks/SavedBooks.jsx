@@ -10,11 +10,16 @@ const SavedBooks = props => {
       .delete(`/api/books/${props.book._id}`)
       .then((res) => {
         console.log(res.data);
+        refreshPage();
       })
       .catch((err) => {
         console.log(err);
       });
   };
+
+  const refreshPage = ()=>{
+    window.location.reload();
+  }
 
   return (
     <div className="mt-5">
