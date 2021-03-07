@@ -8,8 +8,6 @@ const BookResult = ({ book, saveBook }) => {
 
   return (
     <div className="mt-5">
-      
-
       <div className="card">
         <div className="card-body">
           <div id="buttons" className="float-right">
