@@ -4,6 +4,9 @@ import axios from "axios";
 const SavedBooks = props => {
   const { _id, authors, title, link, image, description } = props.book;
 
+  const loremDesc =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+  
   const deleteBook = (id) => {
     // console.log("Delete book clicked!");
     axios
@@ -51,7 +54,7 @@ const SavedBooks = props => {
                   </div>
                   <div className="col-md-7">
                     <div className="card-body">
-                      <p className="card-text">{description}</p>
+                      <p className="card-text">{description || loremDesc}</p>
                     </div>
                   </div>
                 </div>
