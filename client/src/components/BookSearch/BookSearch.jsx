@@ -10,14 +10,14 @@ const BookSearch = props => {
         `https://www.googleapis.com/books/v1/volumes?q=intitle:${value}&key=AIzaSyAfrpQXZXcliTIXdDGXtxQAW6Pi5iGb42w`
       )
       .then(response => {
-        console.log(response.data.items);
+        // console.log(response.data.items);
         props.setBooks(response.data.items);
       });
   };
 
   const handleInputChange = e => {
     const { value } = e.target;
-    console.log(value);
+    // console.log(value);
     setBookSearch(value);
   };
 
