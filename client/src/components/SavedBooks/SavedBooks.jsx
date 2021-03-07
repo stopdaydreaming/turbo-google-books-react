@@ -2,18 +2,18 @@ import React from "react";
 import axios from "axios";
 
 const SavedBooks = props => {
-  const { authors, title, link, image, description } = props.book;
+  const { _id, authors, title, link, image, description } = props.book;
 
   const deleteBook = (id) => {
     console.log("Delete book clicked!");
-    // axios
-    //   .delete(`/api/books/${id}`)
-    //   .then((res) => {
-    //     console.log(res.data);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+    axios
+      .delete(`/api/books/${props.book._id}`)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
